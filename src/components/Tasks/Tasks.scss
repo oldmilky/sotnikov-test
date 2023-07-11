@@ -1,0 +1,41 @@
+@import 'src/index.scss';
+
+.tasks {
+    background-color: $white;
+    padding: 0 30px 50px;
+    border-bottom: 2px solid #B6B6B6;
+    margin: 0 auto;
+    max-width: 1340px;
+    .tasks__delete {
+        padding: 5px 10px 5px 10px;
+        border-radius: 8px;
+        border: 2px solid #B6B6B6;
+        outline: none;
+        color: #5f5e5e;
+        font-size: 17px;
+        font-weight: 500;
+        cursor: pointer;
+        margin: 30px 0 0;
+        box-shadow: $shadow-button;
+    }
+    .tasks__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 410px);
+        justify-content: center;
+        grid-gap: 25px;
+        @media screen and (max-width: 470px) {
+            grid-template-columns: repeat(auto-fill, 100%);
+        }
+    }
+    .tasks__title {
+        color: $dark;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 70px 0 30px;
+    }
+    .tasks__text {
+        color: #5A5A5A;
+        font-size: 22px;
+        font-weight: 500;
+    }
+}

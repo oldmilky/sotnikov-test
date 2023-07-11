@@ -1,0 +1,66 @@
+@import 'src/index.scss';
+
+.photo {
+    width: 100%;
+    max-width: 610px;
+    border: 2px solid $dark;
+    border-radius: 8px;
+    box-shadow: $shadow;
+    padding: 20px;
+}
+
+.photo__favorite {
+    width: 100%;
+    max-width: 610px;
+    border: 2px solid $focus;
+    border-radius: 8px;
+    box-shadow: $shadow-focus;
+    padding: 20px;
+}
+
+.photo__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #B9B9B9;
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
+
+    .photo__wrap {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .photo__logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .photo__name {
+        color: $black;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .photo__icon {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+}
+
+.photo__image {
+    max-width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.photo__title {
+    color: #5A5A5A;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    text-align: center;
+}

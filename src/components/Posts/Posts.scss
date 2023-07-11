@@ -1,0 +1,29 @@
+@import 'src/index.scss';
+
+.posts {
+    background-color: $white;
+    padding: 0 30px 50px;
+    border-bottom: 2px solid #B6B6B6;
+    max-width: 1340px;
+    margin: 0 auto;
+
+    .posts__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .posts__subtitle {
+        color: #5A5A5A;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0 0 30px 0;
+    }
+
+    .test {
+        width: 830px;
+        height: 400px;
+        background-color: sandybrown;
+    }
+}

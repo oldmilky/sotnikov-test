@@ -1,0 +1,66 @@
+@import 'src/index.scss';
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 30px 0 30px;
+    max-width: 1340px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 740px) {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .title__title {
+        color: $black;
+        font-size: 28px;
+        font-weight: 600;
+        margin: 0;
+
+        .title__span {
+            color: #5A5A5A;
+            font-size: 22px;
+        }
+    }
+
+    .title__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .title__button {
+        padding: 12px 14px 12px 14px;
+        border-radius: 8px;
+        background: $gradient;
+        border: none;
+        outline: none;
+        color: $white;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+        box-shadow: $shadow-button;
+    }
+
+    .title__button_delete {
+        padding: 5px 10px 5px 10px;
+        border-radius: 8px;
+        border: 2px solid #B6B6B6;
+        outline: none;
+        color: #5f5e5e;
+        font-size: 17px;
+        font-weight: 500;
+        cursor: pointer;
+        box-shadow: $shadow;
+
+        .title__button_delete-img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}

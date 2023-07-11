@@ -1,0 +1,67 @@
+@import 'src/index.scss';
+
+.task {
+    max-width: 410px;
+    border: 2px solid $dark;
+    border-radius: 8px;
+    box-shadow: $shadow;
+    padding: 20px;
+}
+
+.task__completed {
+    max-width: 410px;
+    border: 2px solid $focus;
+    border-radius: 8px;
+    box-shadow: $shadow-focus;
+    padding: 20px;
+}
+
+.task__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #B9B9B9;
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
+
+    .task__wrap {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .task__logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .task__name {
+        color: $black;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .task__icon {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+}
+
+.task__text {
+    color: #5A5A5A;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.task__text_completed {
+    color: #5A5A5A;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    text-align: center;
+    text-decoration: $dark line-through;
+}

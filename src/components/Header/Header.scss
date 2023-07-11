@@ -1,0 +1,72 @@
+@import 'src/index.scss';
+
+.header {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #B6B6B6;
+    max-width: 1340px;
+    margin: 0 auto;
+
+    .header__logo {
+        width: 250px;
+        height: 100px;
+    }
+
+    .header__link {
+        text-decoration: none;
+    }
+
+    .header__burger {
+        display: none;
+
+        @media screen and (max-width: 740px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        .header__burger-line {
+            width: 30px;
+            height: 4px;
+            border-radius: 8px;
+            background: $gradient;
+        }
+    }
+
+    .header__container {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        @media screen and (max-width: 740px) {
+            display: none;
+        }
+    }
+
+    .header__title {
+        font-size: 20px;
+        font-weight: 500;
+        color: $black;
+    }
+
+    .header__title_active {
+        font-size: 20px;
+        font-weight: 500;
+        color: $dark;
+        border-bottom: 2px solid $dark;
+    }
+
+    .header__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header__icon {
+        width: 23px;
+        height: 23px;
+    }
+}
